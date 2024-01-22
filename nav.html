@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="hotel-&-travel" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-plane-departure"></i>  hotel & travel</a>
+		<a id="rsvp" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-envelope"></i>  RSVP</a>
+		<a id="schedule" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"></i>  schedule</a>
+		<a id="things-to-do-antigua" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-volcano"></i>  things to do in antigua</a>
+		<a id="gifts" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-circle-dollar-to-slot"></i></i>  gifts</a>
+		<a id="faqs" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-question"></i>  faqs</a>
+
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://rentspree.notion.site/rentspree/The-Lucarelli-Wedding-6362a05da13148ad8a46abcd9fb024df", '_blank').focus();
+			else if (id == 'hotel-&-travel')
+				window.open("https://rentspree.notion.site/Travel-Hotel-545da380876d410f9d2346f325fffb7f?pvs=25", '_blank').focus();
+			else if (id == 'rsvp')
+				window.open("https://rentspree.notion.site/RSVP-ba25e0a17ac041eb91cba8300c48b3e6?pvs=25", '_blank').focus();
+			else if (id == 'schedule')
+				window.open("https://rentspree.notion.site/Schedule-a89a20e1167241c5acb763065151c635?pvs=25", '_blank').focus();
+			else if (id == 'things-to-do-antigua')
+				window.open("https://rentspree.notion.site/Things-to-Do-in-Antigua-b64dcb2534f844c59abcf2bd6fd01cce?pvs=25", '_blank').focus();
+			else if (id == 'gifts')
+				window.open("https://rentspree.notion.site/Gifts-4346d1dfe17c445b9b5aaf47f2b41418?pvs=25", '_blank').focus();
+			else if (id == 'faqs')
+				window.open("https://rentspree.notion.site/FAQs-c3440536193c4f7b8aacd9f68cd7c716?pvs=25", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
